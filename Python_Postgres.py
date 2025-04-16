@@ -95,7 +95,7 @@ def find_client(conn, first_name=None, last_name=None, email=None, phone=None):
         return cur.fetchall()
 
 if __name__ == '__main__':
-    with psycopg2.connect(database="netology_db", user="postgres", password="Zapret123!") as conn:
+    with psycopg2.connect(database="netology_db", user="postgres", password="postgres") as conn:
         create_db(conn)
 
         # Добавление клиентов
